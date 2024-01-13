@@ -1,0 +1,88 @@
+def add(x,y):
+    return x+y 
+
+
+def subtraction(x,y):
+    return x-y 
+
+
+def multiplication(x,y):
+    return x*y 
+
+
+def mod(x,y): 
+    return x%y 
+
+
+def division (x,y):
+    return x/y
+
+
+def power_of (x,y):
+    return x**y 
+
+
+def times_10(x): 
+   return x* 10
+
+
+def times_100(x): 
+   return x* 100
+
+
+def times_1000(x): 
+   
+   return x* 1000
+# getting the imput numbers
+x=int(input("enter your first number:"))
+y=int(input("enter your second number:"))
+# getting the user required operation
+operation=""
+while(operation!="e"):
+ z=input('''Which  operation you wanna do :::: enter
+         + :to add 
+         - :to subtract
+         * :to multipy
+        pow :to get power 
+        mod :to get remainder
+        X10 :to multipy by 10 
+        X100: to multiply by 100
+        X1000:to multiply by 1000
+        e to exit::''')
+
+
+
+
+# addition
+ if z== "+":
+  print(f'addition of {x} and {y} is : {add(x,y)}')
+#  subtraction
+ elif  z == "-":
+  print(f'subtraction of {x} and {y} is {subtraction(x,y)}')
+# multiplication
+ elif z=="*":
+  print(f'multiplicationof {x} and {y} is :{multiplication(x,y)}')
+# power of
+ elif z=="pow": 
+  print(f'{x} to the power of {y} is: {power_of(x,y)}')
+# modolus
+ elif z== "mod":
+   print(f'{x} mod {y} is :{mod(x,y)}')
+# times 10
+ elif z=="X10":
+   print (f"{x} times 10 is : {(x)*10}")
+   print (f"{y} times 10 is : {(y)*10}")
+          
+# times 100
+ elif z == "X100":
+   print (f"{x} times 100 is : {(x)*10}")
+   print (f"{y} times 100 is : {(y)*10}")
+# times 1000 
+ elif z == "X1000":
+   print (f"{x} times 1000 is : {(x)*1000}")
+   print (f"{y} times 1000 is : {(y)*1000}")
+ elif z=="e":
+    operation= "e"
+    
+ else :
+   print ("you asked for wrong operation")
